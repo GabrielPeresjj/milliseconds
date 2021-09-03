@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>exemplo: Fri, 2 Sept 2021 09:00:00 GMT</p>
+<input type="text" name="hora" id="hora">
+<br/>
+<button id="clique" name="clique" onclick="converteMili()">Clique</button>
+​
+<p id="demo"></p>
+​
+<script type="text/javascript">
+function converteMili(){
+	var x = document.getElementById("hora").value;
+	var a = Date.parse(x)
+	
+	document.getElementById("demo").innerHTML = a;
+}
+</script>
+</body>
+</html>
